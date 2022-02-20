@@ -1,0 +1,67 @@
+@import "variables";
+@import "extends";
+@import "mixins";
+
+nav {
+    margin: 40px;
+    display: grid;
+    grid-template-columns: 0.5fr 1.5fr;
+    grid-template-rows: 100%;
+    grid-template-areas: "div-lista div-lista-productos";
+}
+
+.div-lista {
+    grid-area: div-lista;
+    @extend %flex-column;
+    @include prefijos (flex-start)
+}
+.div-lista-productos {
+    grid-area: div-lista-productos;
+    @extend %flex-column;
+    @include prefijos (flex-start)
+}
+
+
+ul {
+    list-style-type: none;
+}
+
+.lista-exterior {
+    list-style-position: outside;
+}
+
+.lista-interior {
+    list-style-position: inside;
+}
+
+.lista-productos {
+    padding: 10px;
+    @extend %flex-row;
+    flex-wrap: wrap;
+}
+
+.div-menu-dropdown {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+}
+
+.menu-dropdown {
+    background-color: rgb(140, 223, 191);
+    padding: 7px;
+    transition: all 0.5s;
+    @extend %flex-row;
+}
+
+.menu-dropdown:hover {
+    padding: 12px;
+    border: 4px solid rgb(201, 201, 92);
+}
+
+.imagen-producto {
+    height: 190px ;
+    width: 190px ;
+}
+
+
+

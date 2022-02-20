@@ -1,0 +1,19 @@
+{
+  "name": "desafios-clase-10",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tit1x/Desafio-clase-15.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tit1x/Desafio-clase-15/issues"
+  },
+  "homepage": "https://github.com/tit1x/Desafio-clase-15#readme",
+  "description": ""
+}

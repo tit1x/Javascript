@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito</title>
+
+    
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    
+    <!-- Animacion -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body class="animate__animated animate__zoomIn">
+    <!--Encabezado-->
+   <header class="encabezado">
+
+        <div class="imagen-inicio-encabezado">
+            <a class="vuelta-inicio" href="../index.html"><img src="../Imagenes/Logo Pagina.jpeg" alt="Logo Estacion Natural MaThi" width="193" height="111"></a>
+        </div>
+
+        <div class="carrito">
+            <button>
+                <a class="text-decoration-none" href="Carrito.html"> <h4>Carrito</h4> </a> 
+            </button>
+
+            <button>
+                <a class="mi-perfil text-decoration-none" href="Mi_Cuenta.html"> <img src="../Imagenes/Mi perfil.jpg" alt="Mi perfil" width="30" height="30"> <h4 class="mi-perfil-texto">Mi perfil</h4> </a> 
+            </button>
+        </div>
+
+        <div class="productos">
+            <h6 class="texto-promocional">
+                ¡Hacé tu pedido online! Retiro en Tienda. Todos los medios de pago.
+            </h6>
+
+            <nav class="navbar navbar-light">
+                <div class="container-fluid">
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success buscador" type="submit"> <h4> Buscar </h4> </button>
+                </form>
+                </div>
+            </nav>
+    
+            <button>
+                <a class="text-decoration-none" href="Productos.html"> <h4>Productos</h4> </a> 
+            </button>
+        </div>
+
+    </header>
+    <!--Encabezado celulares-->
+    <header class="sticky-top encabezado-celulares">
+        <div class="container">
+            <div class="row row-cols-2 justify-content-center">
+                <div class="col-lg-2">
+                <nav class="navbar navbar-dark dropdown menu-encabezado">
+                        <button class="navbar-toggler btn btn-secondary dropdown-toggle button-menu-celulares" type="button" data-bs-toggle="dropdown" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="../index.html">Inicio</a></li>
+                            <li><a class="dropdown-item" href="Productos.html">Productos</a></li>
+                            <li><a class="dropdown-item" href="Carrito.html">Carrito</a></li>
+                            <li><a class="dropdown-item" href="Mi_Cuenta.html">Mi perfil</a></li>
+                        </ul>
+                </nav>
+                </div>
+                <div class="col-lg-10">
+                    <nav class="navbar navbar-light buscador-celular">
+                        <div>
+                        <form class="d-flex">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success buscador" type="submit"> <h6> Buscar </h6> </button>
+                        </form>
+                        </div>
+                    </nav>
+                </div>
+                
+            
+            </div>
+        </div>
+    </header>
+
+    <section class="section-carrito">
+
+        <div class="carrito-grid-uno">
+
+            <h2>Agregados al Carrito</h2>
+        </div>
+
+        <div class="carrito-grid-dos">
+            <ul >
+                <li> <h6>Producto 1 $x.xx <input class="form-check-input me-1" type="checkbox" value="" aria-label="..."></h6> </li>
+                <li> <h6>Producto 2 $x.xx <input class="form-check-input me-1" type="checkbox" value="" aria-label="..."></h6> </li>
+            </ul>
+        </div>
+
+        <div class="carrito-grid-tres">
+            <h2>Total $x.xx</h2> <!--Aca iria el precio total de producto mediante la sumatoria de lo del carrito-->
+        </div>
+        
+
+        <div class="carrito-grid-cuatro">
+            <h2>Tus Últimas Compras</h2>
+        </div>
+
+        <div class="carrito-grid-cinco">
+            <ul>
+                <li> <h6>xx/xx/xx Producto 1 $x.xx</h6> </li>
+                <li> <h6>xx/xx/xx Producto 2 $x.xx</h6> </li>
+            </ul>
+        </div>
+
+        <div class="pagar animate__animated animate__pulse">
+
+            <button> <a class="text-decoration-none" href="Pagar.html"> <h3>Pagar</h3> </a>  </button>
+            <!--a este boton hay que agregarle para que detecte si tiene cuenta o si no, 
+            en caso de que no hay que agregar para que meta todos los datos correspondientes para pagar-->
+        </div>
+
+
+    </section>
+
+    <section class="section-carrito-celulares">
+        <div> 
+            <div class="row">
+                <h2>Tus Últimas Compras</h2>
+                <ul>
+                    <li> <h6>xx/xx/xx Producto 1 $x.xx</h6> </li>
+                    <li> <h6>xx/xx/xx Producto 2 $x.xx</h6> </li>
+                </ul>
+            </div>
+            
+            <div class="row">
+                <h2>Agregados al Carrito</h2>
+                <ul>
+                    <li> <h6>Producto 1 $x.xx <input class="form-check-input me-1" type="checkbox" value="" aria-label="..."> </h6> </li>
+                    <li> <h6>Producto 2 $x.xx <input class="form-check-input me-1" type="checkbox" value="" aria-label="..."> </h6> </li>
+                </ul>
+            </div>
+    
+            <div class="row">
+                <h2 id="total">Total $x.xx</h2> <!--Aca iria el precio total de producto mediante la sumatoria de lo del carrito-->
+            <div>
+            
+            <div class="pagar animate__animated animate__pulse">
+                <button> <a class="text-decoration-none" href="Pagar.html"> <h3>Pagar</h3> </a>  </button>
+            </div>
+        </div>
+    </section>
+
+
+    <!--Pie de página-->
+    <footer class="pie-de-pagina">
+
+        <div class="imagen-inicio-pie-de-pagina">
+            <a class="vuelta-inicio text-decoration-none" href="../index.html"><img src="../Imagenes/Logo Pagina.jpeg" alt="Logo principal" width="193" height="111"></a>
+        </div>
+
+        <div class="menu">
+            <h2> Menú </h2>
+        </div>
+
+        <div class="div-menu">
+            <button class="productos">
+                <a class="text-decoration-none" href="Productos.html"> <h4>Productos</h4> </a> 
+            </button>
+        
+            <button class="cuenta">
+                <a class="mi-perfil text-decoration-none" href="Mi_Cuenta.html"> <img src="../Imagenes/Mi perfil.jpg" alt="Mi perfil" width="30" height="30"> <h4 class="mi-perfil-texto">Mi perfil</h4> </a>
+            </button>
+
+             <button class="carrito">
+                <a class="text-decoration-none" href="Carrito.html"> <h4>Carrito</h4> </a> 
+            </button>
+        </div>
+
+        <div class="contactos">
+            <h2> Contactos </h2>
+        </div>
+
+        <div class="div-contactos">
+            <ul>
+                <li>
+                    <h5> Instagram: </h5>
+                    <a href="https://www.instagram.com/estacionmathi/" target="_blank"><img class="redes" src="../Imagenes/instagram.jpg"></a>
+                </li>
+                <li>
+                    <h5> Facebook: </h5>
+                    <a href="https://www.facebook.com/Estaci%C3%B3n-Natural-MaThi-448270959041252" target="_blank"><img class="redes" src="../Imagenes/facebook.png"></a>
+                </li>
+                <li>
+                    <h5> Google Maps:</h5>
+                    <a href="https://goo.gl/maps/sTF2aYJW19Nvepwa8" target="_blank"><img class="redes" src="../Imagenes/maps.png"></a>
+                </li>
+            </ul>
+        </div>
+
+    </footer>
+    <!--Pie de página celulares-->
+    <footer class="pie-de-pagina-celulares">
+        <div class="container"> 
+            <div class="row contactos">
+                <h2 class="d-flex justify-content-center"> Contactos </h2>
+            </div>
+
+            <div class="div-contactos">
+                <ul>
+                    <div class="row row-cols-3">
+                        <div class="col-lg-4">
+                        <li class="d-flex flex-column align-items-center">
+                            <h5> Instagram </h5>
+                            <a href="https://www.instagram.com/estacionmathi/" target="_blank"><img class= "imagenes-contactos" src="../Imagenes/instagram.jpg"></a>
+                        </li>
+                        </div>
+                        <div class="col-lg-4">
+                        <li class="d-flex flex-column align-items-center">
+                            <h5> Facebook </h5>
+                            <a href="https://www.facebook.com/Estaci%C3%B3n-Natural-MaThi-448270959041252" target="_blank"><img class= "imagenes-contactos" src="../Imagenes/facebook.png"></a>
+                        </li>
+                        </div>
+                        <div class="col-lg-4">
+                        <li class="d-flex flex-column align-items-center">
+                            <h5> Google Maps </h5>
+                            <a href="https://goo.gl/maps/sTF2aYJW19Nvepwa8" target="_blank"><img class= "imagenes-contactos" src="../Imagenes/maps.png"></a>
+                        </li>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+        </div> 
+
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html>

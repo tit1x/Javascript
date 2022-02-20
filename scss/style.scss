@@ -1,0 +1,206 @@
+@import "variables";
+@import "extends";
+@import "mixins";
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+    h1{
+        font-family: $font;  
+        color: $color-Titulos;
+        text-decoration: none;
+        font-size: $size-Titulos;
+        padding-bottom: 40px ;
+    }
+    h2{
+    font-family: $font;
+    font-size: $size-Titulos;
+    color: $color-Titulos;
+    text-decoration: none;
+    }
+    
+    h3{
+    font-family: $font;
+    font-size: $size-Semititulos;
+    color: $color-Semititulos;
+    text-decoration: none;
+    }
+    
+    h4 {
+    font-family: $font;
+    font-size: $size-Semititulos;
+    color: $color-Semititulos;
+    text-decoration: none;
+    }
+    
+    h5{
+    font-family: $font;
+    font-size: $size-Texto;
+    color: $color-texto-pie-de-pagina;
+    word-spacing: normal;
+    padding: 10px;
+    text-decoration: none;
+    }
+    
+    h6{
+    font-family: $font;
+    font-size: $size-Texto;
+    color: $color-texto;
+    text-decoration: none;
+    }
+
+    .body {
+        background-color: $color-fondo-de-pagina ;
+        display: grid;
+        grid-template-rows: 180px 1fr 450px;
+        grid-template-columns: 1fr;
+        grid-template-areas: "header" "section" "footer";
+    }
+
+    @import "encabezado";
+    @import "pie-de-pagina";
+    
+    .vuelta-inicio {
+        position: relative;
+        left: 20px;
+        transition: all 0.5s;
+    }
+    
+    .mi-perfil {
+        @extend %flex-row;
+        flex-wrap: wrap;
+        @include prefijos (center)
+    }
+    .mi-perfil-texto {
+        padding: 3px;
+    }
+
+    section {
+        text-align: center;
+        grid-area: section;
+        padding: 100px;
+    }
+    
+    button {
+        background-color: rgb(140, 223, 191);
+        padding: 7px;
+        transition: all 0.5s;
+    }
+
+    button:hover {
+        padding: 12px;
+        border: 4px solid rgba(126, 126, 46, 0.534);
+    }
+
+    .button-productos-destacados {
+        padding: 0px;
+        transition: all 0.5s;
+    }
+    .button-productos-destacados:hover {
+        padding: 0px;
+        transform: scale(1.1);
+        border: 0px solid white;
+    }
+
+
+    @import "nav";
+    @import "carrito";
+    @import "registrarse";
+    
+    .animate__animated.animate__pulse {
+        animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.animate__animated.animate__zoomIn {
+    animation-duration: 1.3s;
+}
+@media screen and (max-width:992px) {
+    .body {
+        background-color: $color-fondo-de-pagina ;
+        display: grid;
+        grid-template-rows: 80px 1fr 150px;
+        grid-template-columns: 100%;
+        grid-template-areas: "header-mobile" "section-mobile" "footer-mobile";
+    }
+    
+    .pie-de-pagina {
+       display: none;
+        
+    }
+    .encabezado-celulares{
+        grid-area: header-mobile;
+        background-color: $color-fondo-de-encabezado;
+        border: 5px solid black;  
+    }
+    .pie-de-pagina-celulares {
+        grid-area: footer-mobile;
+        background-color: $color-fondo-de-pie-de-pagina;
+        padding: 10px;
+        
+    }
+    .section-carrito-celulares{
+        grid-area: section-mobile;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+    
+    
+    .imagenes-contactos {
+        max-width: 80px;
+    }
+    .navbar {
+        margin: 0;
+        max-width: 80px;;
+    }
+    .buscador-celular {
+        max-width: 100%;
+    }
+    
+    .vuelta-inicio {display: none;}
+    button:hover {
+        padding: 7px;
+    border: 0px;
+    }
+    section {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+
+}
+
+@media screen and (min-width:993px){
+    .encabezado-celulares {
+        display: none;
+    }
+    .pie-de-pagina-celulares {
+        display: none;
+    }
+    .section-carrito-celulares {
+        display: none;
+    }
+    
+
+}
+
+@media screen and (max-width:500px) {
+    .nav-pc {display: none;}
+    .nav-celulares {
+        display: block;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+@media screen and (min-width:500px) {
+    .nav-celulares {
+        display: none;
+    }
+    
+}

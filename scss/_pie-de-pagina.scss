@@ -1,0 +1,67 @@
+@import "variables";
+@import "extends";
+@import "mixins";
+
+.pie-de-pagina {
+    background-color: $color-fondo-de-pie-de-pagina;
+    padding: 10px;
+    word-spacing: 20px;
+    grid-area: footer;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 60px 1fr;
+    grid-template-areas: "imagen-inicio-pie-de-pagina menu contactos"
+    "imagen-inicio-pie-de-pagina div-menu div-contactos";
+}
+
+.imagen-inicio-pie-de-pagina {
+    grid-area:imagen-inicio-pie-de-pagina ;
+    @extend %flex-row;
+    @include prefijos (left)
+}
+
+.menu {
+    grid-area: menu;
+    @extend %flex-row;
+    @include prefijos (center)
+}
+
+.contactos {
+    grid-area: contactos;
+    @extend %flex-row;
+    @include prefijos (center)
+}
+
+.div-menu {
+    grid-area: div-menu;
+    @extend %flex-column;
+    @include prefijos (space-evenly)
+}
+
+.div-contactos {
+    grid-area: div-contactos;
+    @extend %flex-column;
+    @include prefijos (space-around)
+}
+
+.vuelta-inicio:hover {
+    transform: scale(1.05);
+}
+
+.redes {
+    position:relative;
+    left: 50px;
+    transition: all 0.5s;
+}
+
+.redes:hover {
+    transform: scale(1.1);
+}
+@media screen and (max-width:992px) {
+    .pie-de-pagina {
+        display: none;
+    }
+    .pie-de-pagina-celulares {
+        display: block;
+    }
+}

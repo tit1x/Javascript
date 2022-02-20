@@ -1,0 +1,55 @@
+@import "variables";
+@import "extends";
+@import "mixins";
+
+.section-carrito {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "grid-uno pagar grid-cuatro"
+    "grid-dos pagar grid-cinco"
+    "grid-tres pagar grid-seis"
+    ;
+}
+
+.carrito-grid-uno {
+    grid-area: grid-uno;
+    @extend %flex-column;
+    @include prefijos (center)
+}
+.carrito-grid-dos{
+    grid-area: grid-dos;
+    @extend %flex-column;
+    @include prefijos (center)
+}
+.carrito-grid-tres{
+    grid-area: grid-tres;
+    @extend %flex-column;
+    @include prefijos (center)
+}
+.carrito-grid-cuatro{
+    grid-area: grid-cuatro;
+    @extend %flex-column;
+    @include prefijos (center)  
+}
+.carrito-grid-cinco{
+    grid-area: grid-cinco;
+    @extend %flex-column;
+    @include prefijos (center)
+}
+
+.pagar{
+    grid-area: pagar;
+    @extend %flex-column;
+    @include prefijos (end)
+}
+
+@media screen and (max-width:992px) {
+    .section-carrito{
+        display: none;
+    }
+    .section-carrito-celulares {
+        display: block;
+    }
+}

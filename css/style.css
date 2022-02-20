@@ -1,0 +1,487 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
+.menu-dropdown, .lista-productos, .mi-perfil, .contactos, .menu, .imagen-inicio-pie-de-pagina, .carrito {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.pagar, .carrito-grid-cinco, .carrito-grid-cuatro, .carrito-grid-tres, .carrito-grid-dos, .carrito-grid-uno, .div-lista-productos, .div-lista, .div-contactos, .div-menu, .productos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  font-family: "Roboto", sans-serif;
+  color: #2e912e;
+  text-decoration: none;
+  font-size: 40px;
+  padding-bottom: 40px;
+}
+
+h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 40px;
+  color: #2e912e;
+  text-decoration: none;
+}
+
+h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 25px;
+  color: #224d28;
+  text-decoration: none;
+}
+
+h4 {
+  font-family: "Roboto", sans-serif;
+  font-size: 25px;
+  color: #224d28;
+  text-decoration: none;
+}
+
+h5 {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  color: white;
+  word-spacing: normal;
+  padding: 10px;
+  text-decoration: none;
+}
+
+h6 {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  color: black;
+  text-decoration: none;
+}
+
+.body {
+  background-color: white;
+  display: grid;
+  grid-template-rows: 180px 1fr 450px;
+  grid-template-columns: 1fr;
+  grid-template-areas: "header" "section" "footer";
+}
+
+.menu-dropdown, .lista-productos, .mi-perfil, .contactos, .menu, .imagen-inicio-pie-de-pagina, .carrito {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.pagar, .carrito-grid-cinco, .carrito-grid-cuatro, .carrito-grid-tres, .carrito-grid-dos, .carrito-grid-uno, .div-lista-productos, .div-lista, .div-contactos, .div-menu, .productos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.encabezado {
+  background-color: green;
+  padding: 40px 5px 40px 5px;
+  border: 5px solid black;
+  grid-area: header;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "imagen-inicio-encabezado productos carrito";
+}
+
+.imagen-inicio-encabezado {
+  grid-area: imagen-inicio-encabezado;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.productos {
+  grid-area: productos;
+  justify-content: space-between;
+}
+
+.carrito {
+  grid-area: carrito;
+  justify-content: space-around;
+}
+
+.texto-promocional {
+  text-align: center;
+}
+
+.buscador {
+  background-color: #8cdfbf;
+  padding: 7px;
+  transition: all 0.5s;
+}
+
+.buscador:hover {
+  padding: 12px;
+  border: 4px solid #c9c95c;
+}
+
+.menu-dropdown, .lista-productos, .mi-perfil, .contactos, .menu, .imagen-inicio-pie-de-pagina, .carrito {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.pagar, .carrito-grid-cinco, .carrito-grid-cuatro, .carrito-grid-tres, .carrito-grid-dos, .carrito-grid-uno, .div-lista-productos, .div-lista, .div-contactos, .div-menu, .productos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pie-de-pagina {
+  background-color: black;
+  padding: 10px;
+  word-spacing: 20px;
+  grid-area: footer;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 60px 1fr;
+  grid-template-areas: "imagen-inicio-pie-de-pagina menu contactos" "imagen-inicio-pie-de-pagina div-menu div-contactos";
+}
+
+.imagen-inicio-pie-de-pagina {
+  grid-area: imagen-inicio-pie-de-pagina;
+  justify-content: left;
+}
+
+.menu {
+  grid-area: menu;
+  justify-content: center;
+}
+
+.contactos {
+  grid-area: contactos;
+  justify-content: center;
+}
+
+.div-menu {
+  grid-area: div-menu;
+  justify-content: space-evenly;
+}
+
+.div-contactos {
+  grid-area: div-contactos;
+  justify-content: space-around;
+}
+
+.vuelta-inicio:hover {
+  transform: scale(1.05);
+}
+
+.redes {
+  position: relative;
+  left: 50px;
+  transition: all 0.5s;
+}
+
+.redes:hover {
+  transform: scale(1.1);
+}
+
+.vuelta-inicio {
+  position: relative;
+  left: 20px;
+  transition: all 0.5s;
+}
+
+.mi-perfil {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.mi-perfil-texto {
+  padding: 3px;
+}
+
+section {
+  text-align: center;
+  grid-area: section;
+  padding: 100px;
+}
+
+button {
+  background-color: #8cdfbf;
+  padding: 7px;
+  transition: all 0.5s;
+}
+
+button:hover {
+  padding: 12px;
+  border: 4px solid rgba(126, 126, 46, 0.534);
+}
+
+.button-productos-destacados {
+  padding: 0px;
+  transition: all 0.5s;
+}
+
+.button-productos-destacados:hover {
+  padding: 0px;
+  transform: scale(1.1);
+  border: 0px solid white;
+}
+
+.menu-dropdown, .lista-productos, .carrito, .imagen-inicio-pie-de-pagina, .menu, .contactos, .mi-perfil {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.pagar, .carrito-grid-cinco, .carrito-grid-cuatro, .carrito-grid-tres, .carrito-grid-dos, .carrito-grid-uno, .div-lista-productos, .div-lista, .productos, .div-menu, .div-contactos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+nav {
+  margin: 40px;
+  display: grid;
+  grid-template-columns: 0.5fr 1.5fr;
+  grid-template-rows: 100%;
+  grid-template-areas: "div-lista div-lista-productos";
+}
+
+.div-lista {
+  grid-area: div-lista;
+  justify-content: flex-start;
+}
+
+.div-lista-productos {
+  grid-area: div-lista-productos;
+  justify-content: flex-start;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.lista-exterior {
+  list-style-position: outside;
+}
+
+.lista-interior {
+  list-style-position: inside;
+}
+
+.lista-productos {
+  padding: 10px;
+  flex-wrap: wrap;
+}
+
+.div-menu-dropdown {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+}
+
+.menu-dropdown {
+  background-color: #8cdfbf;
+  padding: 7px;
+  transition: all 0.5s;
+}
+
+.menu-dropdown:hover {
+  padding: 12px;
+  border: 4px solid #c9c95c;
+}
+
+.imagen-producto {
+  height: 190px;
+  width: 190px;
+}
+
+.carrito, .imagen-inicio-pie-de-pagina, .menu, .contactos, .mi-perfil, .lista-productos, .menu-dropdown {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.pagar, .carrito-grid-cinco, .carrito-grid-cuatro, .carrito-grid-tres, .carrito-grid-dos, .carrito-grid-uno, .productos, .div-menu, .div-contactos, .div-lista, .div-lista-productos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-carrito {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: "grid-uno pagar grid-cuatro" "grid-dos pagar grid-cinco" "grid-tres pagar grid-seis";
+}
+
+.carrito-grid-uno {
+  grid-area: grid-uno;
+  justify-content: center;
+}
+
+.carrito-grid-dos {
+  grid-area: grid-dos;
+  justify-content: center;
+}
+
+.carrito-grid-tres {
+  grid-area: grid-tres;
+  justify-content: center;
+}
+
+.carrito-grid-cuatro {
+  grid-area: grid-cuatro;
+  justify-content: center;
+}
+
+.carrito-grid-cinco {
+  grid-area: grid-cinco;
+  justify-content: center;
+}
+
+.pagar {
+  grid-area: pagar;
+  justify-content: end;
+}
+
+@media screen and (max-width: 992px) {
+  .section-carrito {
+    display: none;
+  }
+
+  .section-carrito-celulares {
+    display: block;
+  }
+}
+.carrito, .imagen-inicio-pie-de-pagina, .menu, .contactos, .mi-perfil, .lista-productos, .menu-dropdown {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.productos, .div-menu, .div-contactos, .div-lista, .div-lista-productos, .carrito-grid-uno, .carrito-grid-dos, .carrito-grid-tres, .carrito-grid-cuatro, .carrito-grid-cinco, .pagar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.div-registrarse {
+  padding-bottom: 25px;
+}
+
+.section-registrarse {
+  padding: 30px;
+}
+
+.animate__animated.animate__pulse {
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+.animate__animated.animate__zoomIn {
+  animation-duration: 1.3s;
+}
+
+@media screen and (max-width: 992px) {
+  .body {
+    background-color: white;
+    display: grid;
+    grid-template-rows: 80px 1fr 150px;
+    grid-template-columns: 100%;
+    grid-template-areas: "header-mobile" "section-mobile" "footer-mobile";
+  }
+  .encabezado {
+    display: none;
+  }
+
+  .pie-de-pagina {
+    display: none;
+  }
+
+  .encabezado-celulares {
+    display: block;
+    grid-area: header-mobile;
+    background-color: green;
+    border: 5px solid black;
+  }
+
+  .pie-de-pagina-celulares {
+    display: block;
+    grid-area: footer-mobile;
+    background-color: black;
+    padding: 10px;
+  }
+
+  .section-carrito-celulares {
+    display: block;
+    grid-area: section-mobile;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .imagenes-contactos {
+    max-width: 80px;
+  }
+
+  .navbar {
+    margin: 0;
+    max-width: 80px;
+  }
+
+  .buscador-celular {
+    max-width: 100%;
+  }
+
+  .vuelta-inicio {
+    display: none;
+  }
+
+  button:hover {
+    padding: 7px;
+    border: 0px;
+  }
+
+  section {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+}
+@media screen and (min-width: 993px) {
+  .encabezado-celulares {
+    display: none;
+  }
+
+  .pie-de-pagina-celulares {
+    display: none;
+  }
+
+  .section-carrito-celulares {
+    display: none;
+  }
+}
+@media screen and (max-width: 500px) {
+  .nav-pc {
+    display: none;
+  }
+
+  .nav-celulares {
+    display: block;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 500px) {
+  .nav-celulares {
+    display: none;
+  }
+}
+
+
+
+
+/*# sourceMappingURL=style.css.map */
