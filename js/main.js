@@ -119,22 +119,22 @@ const arrayCarrito = []
 //sumatoria para total
 const sumar = (a,b) => a+b
 let total = 0
-let t = $("#total")
-t.innerHTML = "Total $" + total
+$("#total").html("Total $" + total)
+
 
 let buttonAñadir = $(".buttonAñadir")
 
 console.log(buttonAñadir)
 
-buttonAñadir[0].onclick = () => {total = sumar(total, arrayProducto[0].precio); console.log(total); arrayCarrito.push (new carrito(arrayProducto[0])); localStorage.setItem("carrito",JSON.stringify(arrayCarrito)); JSON.parse(localStorage.getItem("carrito")) ; t.innerHTML = "Total $" + total}
-buttonAñadir[1].onclick = () => {total = sumar(total, arrayProducto[1].precio); console.log(total); arrayCarrito.push (new carrito(arrayProducto[1])); localStorage.setItem("carrito",JSON.stringify(arrayCarrito)); JSON.parse(localStorage.getItem("carrito")) ; t.innerHTML = "Total $" + total}
-buttonAñadir[2].onclick = () => {total = sumar(total, arrayProducto[2].precio); console.log(total); arrayCarrito.push (new carrito(arrayProducto[2])); localStorage.setItem("carrito",JSON.stringify(arrayCarrito)); JSON.parse(localStorage.getItem("carrito")) ; t.innerHTML = "Total $" + total}
-buttonAñadir[3].onclick = () => {total = sumar(total, arrayProducto[3].precio); console.log(total); arrayCarrito.push (new carrito(arrayProducto[3])); localStorage.setItem("carrito",JSON.stringify(arrayCarrito)); JSON.parse(localStorage.getItem("carrito")) ; t.innerHTML = "Total $" + total}
-buttonAñadir[4].onclick = () => {total = sumar(total, arrayProducto[4].precio); console.log(total); arrayCarrito.push (new carrito(arrayProducto[4])); localStorage.setItem("carrito",JSON.stringify(arrayCarrito)); JSON.parse(localStorage.getItem("carrito")) ; t.innerHTML = "Total $" + total}
-buttonAñadir[5].onclick = () => {total = sumar(total, arrayProducto[5].precio); console.log(total); arrayCarrito.push (new carrito(arrayProducto[5])); localStorage.setItem("carrito",JSON.stringify(arrayCarrito)); JSON.parse(localStorage.getItem("carrito")) ; t.innerHTML = "Total $" + total}
-buttonAñadir[6].onclick = () => {total = sumar(total, arrayProducto[6].precio); console.log(total); arrayCarrito.push (new carrito(arrayProducto[6])); localStorage.setItem("carrito",JSON.stringify(arrayCarrito)); JSON.parse(localStorage.getItem("carrito")) ; t.innerHTML = "Total $" + total}
-buttonAñadir[7].onclick = () => {total = sumar(total, arrayProducto[7].precio); console.log(total); arrayCarrito.push (new carrito(arrayProducto[7])); localStorage.setItem("carrito",JSON.stringify(arrayCarrito)); JSON.parse(localStorage.getItem("carrito")) ; t.innerHTML = "Total $" + total}
-buttonAñadir[8].onclick = () => {total = sumar(total, arrayProducto[8].precio); console.log(total); arrayCarrito.push (new carrito(arrayProducto[8])); localStorage.setItem("carrito",JSON.stringify(arrayCarrito)); JSON.parse(localStorage.getItem("carrito")) ; t.innerHTML = "Total $" + total}
-buttonAñadir[9].onclick = () => {total = sumar(total, arrayProducto[9].precio); console.log(total); arrayCarrito.push (new carrito(arrayProducto[9])); localStorage.setItem("carrito",JSON.stringify(arrayCarrito)); JSON.parse(localStorage.getItem("carrito")) ; t.innerHTML = "Total $" + total}
-buttonAñadir[10].onclick = () => {total = sumar(total, arrayProducto[10].precio); console.log(total); arrayCarrito.push (new carrito(arrayProducto[10])); localStorage.setItem("carrito",JSON.stringify(arrayCarrito)); JSON.parse(localStorage.getItem("carrito")) ; t.innerHTML = "Total $" + total}
+buttonAñadir[0].onclick = () => {total = sumar(total, arrayProducto[0].precio); console.log(total); arrayCarrito.push (new carrito(arrayProducto[0])); localStorage.setItem("carrito",JSON.stringify(arrayCarrito)); JSON.parse(localStorage.getItem("carrito")) ; $("#total").html("Total $" + total)}
+buttonAñadir[1].onclick = () => {total = sumar(total, arrayProducto[1].precio); console.log(total); arrayCarrito.push (new carrito(arrayProducto[1])); localStorage.setItem("carrito",JSON.stringify(arrayCarrito)); JSON.parse(localStorage.getItem("carrito")) ; $("#total").html("Total $" + total)}
+buttonAñadir[2].onclick = () => {total = sumar(total, arrayProducto[2].precio); console.log(total); arrayCarrito.push (new carrito(arrayProducto[2])); localStorage.setItem("carrito",JSON.stringify(arrayCarrito)); JSON.parse(localStorage.getItem("carrito")) ; $("#total").html("Total $" + total)}
+buttonAñadir[3].onclick = () => {total = sumar(total, arrayProducto[3].precio); console.log(total); arrayCarrito.push (new carrito(arrayProducto[3])); localStorage.setItem("carrito",JSON.stringify(arrayCarrito)); JSON.parse(localStorage.getItem("carrito")) ; $("#total").html("Total $" + total)}
+buttonAñadir[4].onclick = () => {total = sumar(total, arrayProducto[4].precio); console.log(total); arrayCarrito.push (new carrito(arrayProducto[4])); localStorage.setItem("carrito",JSON.stringify(arrayCarrito)); JSON.parse(localStorage.getItem("carrito")) ; $("#total").html("Total $" + total)}
+buttonAñadir[5].onclick = () => {total = sumar(total, arrayProducto[5].precio); console.log(total); arrayCarrito.push (new carrito(arrayProducto[5])); localStorage.setItem("carrito",JSON.stringify(arrayCarrito)); JSON.parse(localStorage.getItem("carrito")) ; $("#total").html("Total $" + total)}
+buttonAñadir[6].onclick = () => {total = sumar(total, arrayProducto[6].precio); console.log(total); arrayCarrito.push (new carrito(arrayProducto[6])); localStorage.setItem("carrito",JSON.stringify(arrayCarrito)); JSON.parse(localStorage.getItem("carrito")) ; $("#total").html("Total $" + total)}
+buttonAñadir[7].onclick = () => {total = sumar(total, arrayProducto[7].precio); console.log(total); arrayCarrito.push (new carrito(arrayProducto[7])); localStorage.setItem("carrito",JSON.stringify(arrayCarrito)); JSON.parse(localStorage.getItem("carrito")) ; $("#total").html("Total $" + total)}
+buttonAñadir[8].onclick = () => {total = sumar(total, arrayProducto[8].precio); console.log(total); arrayCarrito.push (new carrito(arrayProducto[8])); localStorage.setItem("carrito",JSON.stringify(arrayCarrito)); JSON.parse(localStorage.getItem("carrito")) ; $("#total").html("Total $" + total)}
+buttonAñadir[9].onclick = () => {total = sumar(total, arrayProducto[9].precio); console.log(total); arrayCarrito.push (new carrito(arrayProducto[9])); localStorage.setItem("carrito",JSON.stringify(arrayCarrito)); JSON.parse(localStorage.getItem("carrito")) ; $("#total").html("Total $" + total)}
+buttonAñadir[10].onclick = () => {total = sumar(total, arrayProducto[10].precio); console.log(total); arrayCarrito.push (new carrito(arrayProducto[10])); localStorage.setItem("carrito",JSON.stringify(arrayCarrito)); JSON.parse(localStorage.getItem("carrito")) ; $("#total").html("Total $" + total)}
 
