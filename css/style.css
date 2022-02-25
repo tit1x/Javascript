@@ -124,6 +124,15 @@ h6 {
   border: 4px solid #c9c95c;
 }
 
+@media screen and (max-width: 992px) {
+  .encabezado {
+    display: none;
+  }
+
+  .encabezado-celulares {
+    display: block;
+  }
+}
 .menu-dropdown, .lista-productos, .mi-perfil, .contactos, .menu, .imagen-inicio-pie-de-pagina, .carrito {
   display: flex;
   flex-direction: row;
@@ -186,6 +195,15 @@ h6 {
   transform: scale(1.1);
 }
 
+@media screen and (max-width: 992px) {
+  .pie-de-pagina {
+    display: none;
+  }
+
+  .pie-de-pagina-celulares {
+    display: block;
+  }
+}
 .vuelta-inicio {
   position: relative;
   left: 20px;
@@ -376,6 +394,16 @@ ul {
   padding: 30px;
 }
 
+#cuentaCorrecta {
+  display: none;
+  padding: 10px;
+}
+
+#cuentaIncorrecta {
+  display: none;
+  padding: 10px;
+}
+
 .animate__animated.animate__pulse {
   animation-duration: 2s;
   animation-iteration-count: infinite;
@@ -393,30 +421,24 @@ ul {
     grid-template-columns: 100%;
     grid-template-areas: "header-mobile" "section-mobile" "footer-mobile";
   }
-  .encabezado {
-    display: none;
-  }
 
   .pie-de-pagina {
     display: none;
   }
 
   .encabezado-celulares {
-    display: block;
     grid-area: header-mobile;
     background-color: green;
     border: 5px solid black;
   }
 
   .pie-de-pagina-celulares {
-    display: block;
     grid-area: footer-mobile;
     background-color: black;
     padding: 10px;
   }
 
   .section-carrito-celulares {
-    display: block;
     grid-area: section-mobile;
     max-width: 300px;
     margin: 0 auto;
@@ -480,8 +502,5 @@ ul {
     display: none;
   }
 }
-
-
-
 
 /*# sourceMappingURL=style.css.map */
