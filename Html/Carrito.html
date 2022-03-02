@@ -97,14 +97,13 @@
         </div>
 
         <div class="carrito-grid-dos">
-            <ul >
-                <li> <h6>Producto 1 $x.xx <input class="form-check-input me-1" type="checkbox" value="" aria-label="..."></h6> </li>
-                <li> <h6>Producto 2 $x.xx <input class="form-check-input me-1" type="checkbox" value="" aria-label="..."></h6> </li>
+            <ul id="agregados" >
+                
             </ul>
         </div>
 
         <div class="carrito-grid-tres">
-            <h2>Total $x.xx</h2> <!--Aca iria el precio total de producto mediante la sumatoria de lo del carrito-->
+            <h2 id="total">Total $x.xx</h2> <!--Aca iria el precio total de producto mediante la sumatoria de lo del carrito-->
         </div>
         
 
@@ -121,7 +120,7 @@
 
         <div class="pagar animate__animated animate__pulse">
 
-            <button> <a class="text-decoration-none" href="Pagar.html"> <h3>Pagar</h3> </a>  </button>
+            <button id="pagar"> <a class="text-decoration-none" href="Pagar.html"> <h3>Pagar</h3> </a>  </button>
             <!--a este boton hay que agregarle para que detecte si tiene cuenta o si no, 
             en caso de que no hay que agregar para que meta todos los datos correspondientes para pagar-->
         </div>
@@ -142,8 +141,7 @@
             <div class="row">
                 <h2>Agregados al Carrito</h2>
                 <ul>
-                    <li> <h6>Producto 1 $x.xx <input class="form-check-input me-1" type="checkbox" value="" aria-label="..."> </h6> </li>
-                    <li> <h6>Producto 2 $x.xx <input class="form-check-input me-1" type="checkbox" value="" aria-label="..."> </h6> </li>
+
                 </ul>
             </div>
     
@@ -246,5 +244,6 @@
     
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="../js/main.js"></script>
+    <script src="../js/carrito.js"></script>
 </body>
 </html>
